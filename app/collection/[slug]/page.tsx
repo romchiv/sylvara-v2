@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import Header from "@/components/Header"
 import { watches, getWatch } from "@/data/watches"
+import { getCheckoutUrl } from "@/lib/shopify"
 
 export function generateStaticParams() {
   return watches.map((w) => ({ slug: w.slug }))
@@ -75,15 +76,18 @@ export default async function ProductPage({
 
             {/* CTA */}
             <div className="flex items-center gap-4 flex-wrap">
-              <button
-                className="px-10 py-3.5 rounded-full text-xs tracking-[0.2em] uppercase font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              <a
+                href={getCheckoutUrl(watch.shopifyVariantId)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-10 py-3.5 rounded-full text-xs tracking-[0.2em] uppercase font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-xl inline-block text-center"
                 style={{
                   background: watch.theme.button,
                   boxShadow: `0 0 30px ${watch.theme.glow}`,
                 }}
               >
                 Acheter maintenant
-              </button>
+              </a>
               <button className="px-8 py-3.5 rounded-full text-xs tracking-[0.2em] uppercase font-semibold text-white/70 border border-white/20 hover:border-white/50 hover:text-white transition-all duration-300">
                 Ajouter aux favoris
               </button>

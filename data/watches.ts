@@ -7,6 +7,7 @@ export interface Watch {
   available: boolean
   price: number
   image: string
+  shopifyVariantId: string
   theme: {
     bg: string
     accent: string
@@ -30,6 +31,7 @@ export const watches: Watch[] = [
     available: true,
     price: 195,
     image: '/images/watches/terra.png',
+    shopifyVariantId: '51936835698974',
     theme: {
       bg: 'radial-gradient(ellipse 90% 90% at 62% 42%, rgba(160,90,20,0.5) 0%, rgba(30,12,4,0.97) 60%, #070302 100%)',
       accent: '#c47a38',
@@ -51,6 +53,7 @@ export const watches: Watch[] = [
     available: true,
     price: 195,
     image: '/images/watches/forest.png',
+    shopifyVariantId: '51936836157726',
     theme: {
       bg: 'radial-gradient(ellipse 90% 90% at 62% 42%, rgba(40,110,40,0.55) 0%, rgba(6,18,6,0.97) 60%, #020602 100%)',
       accent: '#5aaa5a',
@@ -72,6 +75,7 @@ export const watches: Watch[] = [
     available: true,
     price: 195,
     image: '/images/watches/glacier.png',
+    shopifyVariantId: '51936836288798',
     theme: {
       bg: 'radial-gradient(ellipse 90% 90% at 62% 42%, rgba(90,140,200,0.4) 0%, rgba(6,12,22,0.97) 60%, #030609 100%)',
       accent: '#8ab8e0',
@@ -93,6 +97,7 @@ export const watches: Watch[] = [
     available: true,
     price: 195,
     image: '/images/watches/lagoon.png',
+    shopifyVariantId: '51936836419870',
     theme: {
       bg: 'radial-gradient(ellipse 90% 90% at 62% 42%, rgba(20,110,150,0.55) 0%, rgba(2,10,20,0.97) 60%, #010508 100%)',
       accent: '#3acce0',
@@ -114,6 +119,7 @@ export const watches: Watch[] = [
     available: true,
     price: 195,
     image: '/images/watches/aurora.png',
+    shopifyVariantId: '51936837435678',
     theme: {
       bg: 'radial-gradient(ellipse 90% 90% at 62% 42%, rgba(40,30,100,0.55) 0%, rgba(4,3,14,0.98) 60%, #020108 100%)',
       accent: '#8070ff',
