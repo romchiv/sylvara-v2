@@ -67,7 +67,7 @@ export default function HeroSlider() {
           className="text-[11px] tracking-[0.25em] uppercase font-medium"
           style={{ color: watch.available ? watch.theme.accentLight : "#ff6060" }}
         >
-          {watch.available ? "DISPONIBLE" : "ÉPUISÉ"}
+          {watch.available ? "AVAILABLE" : "SOLD OUT"}
         </span>
       </div>
 
@@ -153,7 +153,7 @@ export default function HeroSlider() {
               e.currentTarget.style.background = watch.theme.button
             }}
           >
-            Découvrir
+            Discover
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M2 6h8M7 3l3 3-3 3" />
             </svg>
@@ -181,7 +181,7 @@ export default function HeroSlider() {
               key={w.slug}
               onClick={() => goTo(i)}
               className="flex items-center py-2"
-              aria-label={`Aller à ${w.name}`}
+              aria-label={`Go to ${w.name}`}
             >
               <motion.div
                 animate={{

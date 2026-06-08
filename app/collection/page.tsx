@@ -29,9 +29,9 @@ export default function CollectionPage() {
           <div className="hidden md:block w-px h-4 bg-white/10" />
 
           <div className="flex items-center gap-3">
-            <span className="text-[10px] tracking-[0.25em] text-white/40 uppercase">Matière</span>
+            <span className="text-[10px] tracking-[0.25em] text-white/40 uppercase">Material</span>
             <div className="flex items-center gap-2">
-              {["Bois olive", "Noyer", "Ébène", "Burl"].map((mat) => (
+              {["Olive wood", "Walnut", "Ebony", "Burl"].map((mat) => (
                 <span
                   key={mat}
                   className="px-3 py-1 rounded-full text-[10px] tracking-widest text-white/50 border border-white/15 hover:border-white/40 hover:text-white transition-all uppercase cursor-pointer"
@@ -43,7 +43,7 @@ export default function CollectionPage() {
           </div>
 
           <span className="ml-auto text-[11px] tracking-widest text-white/30 hidden sm:block">
-            5 MONTRES
+            5 WATCHES
           </span>
         </div>
       </div>
@@ -51,7 +51,7 @@ export default function CollectionPage() {
       {/* Grid */}
       <div className="max-w-7xl mx-auto px-8 md:px-12 py-14">
         <h2 className="text-[11px] tracking-[0.4em] text-white/30 uppercase mb-10">
-          Toute la collection
+          Full collection
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -117,7 +117,7 @@ export default function CollectionPage() {
                     className="relative z-20 px-4 py-1.5 rounded-full text-[10px] tracking-[0.15em] uppercase font-semibold text-white transition-all hover:scale-105 hover:brightness-125"
                     style={{ background: watch.theme.button }}
                   >
-                    Acheter
+                    Buy
                   </a>
                 </div>
               </div>

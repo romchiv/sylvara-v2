@@ -33,8 +33,8 @@ export default function Header() {
       <nav className="hidden lg:flex items-center gap-10">
         {[
           { label: "COLLECTION", href: "/collection" },
-          { label: "NOTRE ADN", href: "/histoire" },
-          { label: "BOUTIQUES", href: "/boutiques" },
+          { label: "OUR DNA", href: "/histoire" },
+          { label: "STORES", href: "/boutiques" },
         ].map((item) => (
           <Link
             key={item.href}
@@ -57,7 +57,7 @@ export default function Header() {
         </button>
         {/* Language */}
         <button className="flex items-center gap-1 text-xs tracking-widest text-white/60 hover:text-white border border-white/15 rounded px-3 py-1.5 hover:border-white/30 transition-colors">
-          FR
+          EN
           <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor">
             <path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" strokeWidth="1" fill="none"/>
           </svg>
@@ -72,14 +72,14 @@ export default function Header() {
             </svg>
           </button>
           {/* Account */}
-          <button className="text-white/60 hover:text-white transition-colors" aria-label="Compte">
+          <button className="text-white/60 hover:text-white transition-colors" aria-label="Account">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
               <circle cx="12" cy="7" r="4"/>
             </svg>
           </button>
           {/* Cart */}
-          <button className="text-white/60 hover:text-white transition-colors" aria-label="Panier">
+          <button className="text-white/60 hover:text-white transition-colors" aria-label="Cart">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
               <line x1="3" y1="6" x2="21" y2="6"/>
@@ -94,8 +94,8 @@ export default function Header() {
         <div className="absolute top-full left-0 right-0 bg-black/95 backdrop-blur-xl border-t border-white/10 py-8 px-8 flex flex-col gap-6 lg:hidden">
           {[
             { label: "COLLECTION", href: "/collection" },
-            { label: "NOTRE ADN", href: "/histoire" },
-            { label: "BOUTIQUES", href: "/boutiques" },
+            { label: "OUR DNA", href: "/histoire" },
+            { label: "STORES", href: "/boutiques" },
           ].map((item) => (
             <Link
               key={item.href}

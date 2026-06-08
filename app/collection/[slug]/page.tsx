@@ -86,17 +86,17 @@ export default async function ProductPage({
                   boxShadow: `0 0 30px ${watch.theme.glow}`,
                 }}
               >
-                Acheter maintenant
+                Buy now
               </a>
               <button className="px-8 py-3.5 rounded-full text-xs tracking-[0.2em] uppercase font-semibold text-white/70 border border-white/20 hover:border-white/50 hover:text-white transition-all duration-300">
-                Ajouter aux favoris
+                Add to wishlist
               </button>
             </div>
 
             {/* Materials */}
             <div className="mt-10 pt-8 border-t border-white/8">
               <p className="text-[10px] tracking-[0.3em] text-white/35 uppercase mb-4">
-                Matériaux
+                Materials
               </p>
               <div className="flex flex-wrap gap-2">
                 {watch.materials.map((mat) => (
@@ -117,13 +117,13 @@ export default async function ProductPage({
             <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-4 z-20">
               {[
                 {
-                  label: "Favoris",
+                  label: "Wishlist",
                   icon: (
                     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
                   ),
                 },
                 {
-                  label: "Partager",
+                  label: "Share",
                   icon: (
                     <>
                       <circle cx="18" cy="5" r="3" />
@@ -169,17 +169,17 @@ export default async function ProductPage({
           <div className="flex items-center justify-between mb-10">
             <div>
               <p className="text-[10px] tracking-[0.3em] text-white/30 uppercase mb-2">
-                Découvrez aussi
+                Also discover
               </p>
               <h2 className="text-2xl font-bold text-white tracking-wide uppercase">
-                Autres modèles
+                Other models
               </h2>
             </div>
             <Link
               href="/collection"
               className="hidden sm:flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-white/40 hover:text-white transition-colors"
             >
-              Voir tout
+              View all
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M2 7h10M8 4l3 3-3 3" />
               </svg>
