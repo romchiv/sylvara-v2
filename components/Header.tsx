@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 
 export default function Header() {
@@ -9,11 +10,16 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex items-center justify-between">
       {/* Logo */}
-      <Link
-        href="/"
-        className="text-white text-xl font-bold tracking-[0.25em] uppercase hover:opacity-80"
-      >
-        SYLVARA
+      <Link href="/" className="hover:opacity-75 transition-opacity duration-300">
+        <Image
+          src="/images/logo.png"
+          alt="Sylvara"
+          width={160}
+          height={40}
+          className="object-contain"
+          style={{ height: "32px", width: "auto" }}
+          priority
+        />
       </Link>
 
       {/* Hamburger (mobile) */}
